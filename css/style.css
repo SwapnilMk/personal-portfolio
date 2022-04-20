@@ -1,0 +1,365 @@
+/* import google font */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+/* define colors */
+:root {
+  --primary-background-color: #00b8a0;
+  --secoundary-background-color: #063749;
+  --primary-text-color: #061f44;
+  --secoundary-text-color: #bbe6d9;
+}
+
+/* Reset default layout */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  display: grid;
+  position: relative;
+  grid-template-areas: "header" "containt" "footer";
+}
+
+.main-container #header {
+  grid-area: header;
+  display: block;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--secoundary-background-color);
+}
+
+.main-container #containt {
+  grid-area: containt;
+  display: grid;
+  grid-template-areas:
+    "headline"
+    "about"
+    "portfolio";
+  margin-top: 70px;
+  width: 100%;
+  padding: 0;
+}
+
+.main-container #footer {
+  grid-area: footer;
+}
+
+.container .navbar {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.navbar .nav-brand a,
+.navbar .nav-links li a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--secoundary-text-color);
+}
+
+.navbar .nav-brand a {
+  font-size: 1.4vw;
+  font-weight: 600;
+}
+
+.navbar .nav-links li {
+  float: left;
+  list-style-type: none;
+  margin: 0px 20px;
+}
+
+.navbar .nav-links li a {
+  font-size: 0.9vw;
+}
+
+.container .headline {
+  grid-area: headline;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-background-color);
+  align-content: center;
+}
+
+.container .heading h1 {
+  font-size: 2vw;
+  text-align: center;
+  color: var(--primary-text-color);
+  letter-spacing: 2px;
+}
+.container .heading p {
+  font-size: 1vw;
+  text-align: center;
+  color: var(--secoundary-text-color);
+  letter-spacing: 5px;
+  word-spacing: 4px;
+}
+
+.container .headline .icon {
+  margin-top: 30px;
+}
+
+.container .headline .icon a {
+  text-decoration: none;
+  font-size: 1vw;
+  color: var(--primary-text-color);
+}
+
+.container #about {
+  grid-area: about;
+  background-color: var(--secoundary-background-color);
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 25% auto;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "about-us about-us"
+    "dev-info dev-skills";
+}
+
+.container #about #about-us {
+  grid-area: about-us;
+
+  color: var(--primary-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.container #about #dev-info {
+  grid-area: dev-info;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container #about #dev-skills {
+  grid-area: dev-skills;
+}
+
+.main-container #about #dev-info #profile {
+  background-image: url("/img/profile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+  margin-top: 70px;
+}
+
+.main-container #about #dev-info p {
+  color: var(--secoundary-text-color);
+  margin: 40px 0px;
+  height: fit-content;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  line-height: 30px;
+  width: 50%;
+  font-size: 18px;
+}
+
+.main-container #about #dev-info #check-project {
+  font-size: 15px;
+  text-align: center;
+}
+
+.main-container #about #dev-info #check-project a {
+  color: var(--primary-background-color);
+  text-decoration: none;
+}
+
+.main-container #about #dev-skills {
+  color: #bbe6d9;
+  display: grid;
+  grid-template-rows: 25% 75%;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px 40px;
+  grid-template-areas:
+    "skills skills"
+    "frontend design";
+  width: 100%;
+  font-size: 18px;
+}
+
+.main-container #about #dev-skills #skills {
+  grid-area: skills;
+  align-self: center;
+  justify-self: center;
+}
+
+.main-container #about #dev-skills #frontend {
+  grid-area: frontend;
+  line-height: 40px;
+  color: var(--primary-background-color);
+  justify-self: center;
+}
+
+.main-container #about #dev-skills #design {
+  grid-area: design;
+  line-height: 40px;
+  color: var(--primary-background-color);
+  justify-self: center;
+}
+
+.container #portfolio {
+  grid-area: portfolio;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "portfolio-info portfolio-info"
+    "project1 project2"
+    "project3 project4";
+
+  background-color: var(--primary-background-color);
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.container #portfolio .portfolio-info {
+  grid-area: portfolio-info;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+}
+
+.container #portfolio .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container #portfolio #project1 {
+  grid-area: project1;
+  justify-self: right;
+  width: 50%;
+}
+
+.container #portfolio #project2 {
+  grid-area: project2;
+  justify-self: left;
+  width: 50%;
+}
+
+.container #portfolio #project3 {
+  grid-area: project3;
+  justify-self: right;
+  width: 50%;
+}
+
+.container #portfolio #project4 {
+  grid-area: project4;
+  justify-self: left;
+  width: 50%;
+}
+
+.container #portfolio .info h4 {
+  text-align: center;
+  margin: 10px;
+}
+
+.container #portfolio .info p {
+  text-align: center;
+  margin: 10px;
+}
+
+.container #portfolio .info img {
+  display: block;
+  margin: 10px 15px;
+  width: 260px;
+  height: auto;
+}
+
+.container #portfolio .info button {
+  background-color: #00b8a0;
+  border: 1px solid var(--primary-text-color);
+  color: #061f44;
+  height: 3vh;
+  width: 5vw;
+  border-radius: 20px;
+}
+
+.container #portfolio .info button a {
+  text-decoration: none;
+  color: #061f44;
+  text-align: center;
+}
+
+.main-container #footer {
+  height: 50vh;
+  width: 100%;
+  background-color: var(--secoundary-background-color);
+}
+
+.main-container #footer #contact {
+  text-align: center;
+}
+
+.main-container #footer #contact h2 {
+  color: var(--primary-background-color);
+  height: 150px;
+  padding-top: 100px;
+}
+
+.main-container #footer #contact p {
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.main-container #footer #social p {
+  color: var(--primary-background-color);
+  text-align: center;
+  margin-top: 40px;
+}
+
+.main-container #footer #social ul {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 40px 0px;
+}
+
+.main-container #footer #social ul li {
+  float: left;
+  list-style-type: none;
+  margin: 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 60px;
+}
+
+.main-container #footer #social ul li a {
+  text-decoration: none;
+  color: var(--primary-background-color);
+}
