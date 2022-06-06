@@ -45,7 +45,7 @@ body{
     display: none;
 }
 
-/*Stying for small screens*/
+/*Styling for small screens*/
 @media screen and (max-width: 800px){
     nav{
         position: fixed;
@@ -63,18 +63,18 @@ body{
     }
     .nav-links{
         position: fixed;
-        background: #131418;
+        background: var(--color-primary);
         height: 100vh;
         width: 100%;
         flex-direction: column;
         clip-path: circle(50px at 90% -20%);
-        -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
+        -webkit-clip-path: circle(50px at 90% -20%);
+        transition: all 0.5s ease-out;
         pointer-events: none;
     }
     .nav-links.open{
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
+        clip-path: circle(1000px at 90% 0%);
+        -webkit-clip-path: circle(1000px at 90% 0%);
         pointer-events: all;
     }
     .nav-links li{
