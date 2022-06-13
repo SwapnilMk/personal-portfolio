@@ -26,6 +26,7 @@
 
 html {
     background-color: #f0f0f0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -136,3 +137,20 @@ body{
     background-color: var(--color-primary);
 }
 
+#contact {
+    height: 60vh;
+    background-color: var(--color-primary);
+}
+
+
+
+
+.card{
+    height: 35vh;
+    border-radius: 0.55rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
