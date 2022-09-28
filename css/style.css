@@ -1,21 +1,21 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&family=Poppins:wght@200;300;400;500&family=Work+Sans:wght@200;300;400&display=swap');
+
+/* font-family: 'Noto Sans Mono', monospace;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
 html {
   scroll-behavior: smooth;
 }
 
 body{
-	margin: 0px;
-	transition: all 1s;
-}
-@font-face {
-    font-family: 'Nunito-Bold';
-    src:url(../fonts/Nunito-Bold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'OpenSans-Regular';
-    src:url(../fonts/OpenSans-Regular.ttf) format('truetype');
+	margin: 0;
+  padding: 0;
+	transition: all 0.8s;
 }
 
-
+/* Navbar Header  */
 .mainHeader{
 	  position: fixed; 
     top: -60px; 
@@ -24,36 +24,53 @@ body{
     z-index: 1;
     padding-left: 0px;
     padding-right: 0px;
+  }
+  
+  .mainHeader a{
+  font-family: 'Noto Sans Mono', monospace;
+  letter-spacing: 1.4px;
+  margin: 0px 5px;
 }
 
+/* Home section  */
 .header-section {
-  background: #deecdf;
-  background-image: url('../img/1.jpg');
-  text-align: center;
+  background: #111111;
   min-height: 500px;
   height:100vh;
+  text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.header-section img {
-  margin-top: 7em;
+
+.header-section h5{
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff;
+  
 }
-.header-section h2 {
-  font-family: 'Nunito-Bold';
-  font-size: 3em;
+
+.header-section h1 {
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: 600;
+  font-size: 2em;
   text-transform: capitalize;
-  color: #393b3a;
+  color: #ffffff;
   padding: 0.5em 0 0 0;
 }
+
 .header-section span {
-  color: #00cfbd;
+  color: #ffb534;
   font-size: 1em;
 }
+
 .header-section p {
   font-family: 'Nunito-Bold';
   font-size: 1.3em;
-  color: #393b3a;
+  color: #ffffff;
 }
+
+
+
 span.glyphicon.glyphicon-triangle-bottom {
   font-size: 2em;
   color: #fff;
