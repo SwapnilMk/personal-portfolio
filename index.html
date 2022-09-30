@@ -9,8 +9,6 @@
 	<!-- Page Tittle  -->
 	<title> Frontend Dev - UI/UX designer </title>
 
-	<!-- Tailwind css CDN  -->
-	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 	<!-- Latest compiled and minified Bootstrap 5.2.1 CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -52,7 +50,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">Home</a>
+							<a class="nav-link" href="#home">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#about">About</a>
@@ -76,82 +74,40 @@
 	</section>
 
 	<!-- HOME -->
-	<section class="container-fluid header-section d-flex justify-content-center align-items-center">
+	<section class="container-fluid home-section d-flex align-items-center" id="home">
 				<div class="container d-flex flex-column align-items-start">
 					<h5>HI THERE !</h5>
-						<h1>I'M <span>SWAPNIL KISHOR MAHADIK!</span></h1>
-							<p>I'm Web developer, Designer and Student. This is my personal website and your'e here to know me. So, thanks for visiting my portfolio .</p>
+						<h1 class="mb-3 text-start">I'M <span>SWAPNIL KISHOR MAHADIK!</span></h1>
+							<p class="mb-3">I'm Web developer, Designer and Student. This is my personal website and your'e here to know me. So, thanks for visiting my portfolio.</p>
 							
-							<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-								<button type="button" class="btn btn-warning rounded-5">More About Me</button>
-								<button type="button" class="btn btn-warning rounded-5">Hire Me</button>
+							<div class="d-grid gap-3 d-md-flex justify-content-md-end">
+								<a type="button" class="btn btn-warning rounded-5" href="#about">More About Me</a>
+								<a type="button" class="btn btn-warning rounded-5">Hire Me</a>
 							  </div>
 				</div>
 			
 	</section>
 
 	<!-- ABOUT US -->
-	<section class="container-fluid about fadeIn" id="about">
-		<h3>About</h3>
+	<section class="container-fluid about-section" id="about">
 		<div class="container">
-		  <div class="row">
-		   <div class="col-sm-3 col-md-6">
-		      <img class="yourPic img-responsive" src="img/profile.png" alt="Swapyy">
-		   </div>
-		   <div class="col-sm-9 col-md-6">
-		      <p>
-		      	<div class="panel-group" id="accordion">
-				  <div class="panel panel-default">
-				    <div class="panel-heading">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-				        Collapsible Group 1</a>
-				      </h4>
-				    </div>
-				    <div id="collapse1" class="panel-collapse collapse in">
-				      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-				      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-				      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				      commodo consequat.</div>
-				    </div>
-				  </div>
-				  <div class="panel panel-default">
-				    <div class="panel-heading">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-				        Collapsible Group 2</a>
-				      </h4>
-				    </div>
-				    <div id="collapse2" class="panel-collapse collapse">
-				      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-				      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-				      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				      commodo consequat.</div>
-				    </div>
-				  </div>
-				  <div class="panel panel-default">
-				    <div class="panel-heading">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-				        Collapsible Group 3</a>
-				      </h4>
-				    </div>
-				    <div id="collapse3" class="panel-collapse collapse">
-				      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-				      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-				      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				      commodo consequat.</div>
-				    </div>
-				  </div>
+			<div class="row">
+			<h3 class="col-12 mb-5">About</h3>
+			</div>
+			<div class="row d-flex justify-content-center align-items-center">
+				<div class="col-sm-12 col-md-6">
+					<img class="yourPic img-responsive" src="img/profile.png" alt="Swapyy">
 				</div>
-		      </p>
-		   </div>
-		 </div>
-		</div>
-	</section>
-
-	<!-- SKILLS -->
-	<section class="container-fluid skills fadeIn" id="skills">
+				<div class="col-sm-12 col-md-6">
+					<p>Frontend Developer & Computer science graduate with a passion for UI&UX. Strong React &
+						Javascript skills. Always eager to adapt and take on new challenges!</p>
+					</div>
+				</div>
+				</div>
+		</section>
+		
+		<!-- SKILLS -->
+		<section class="container-fluid skills fadeIn" id="skills">
 		<div class="study-section">
 				<div class="container">
 					<div class="study-grids">
@@ -200,7 +156,7 @@
 				</div>
 			</div>
 	</section>
-	<section class="container-fluid experience fadeIn" id="experience">
+	<section class="container-fluid experience" id="experience">
 		<h3>Experience</h3>
 		<div class="container ">
 				<div class="row ">

@@ -5,10 +5,12 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Work Sans', sans-serif; */
 
+/* Reset default css Properties */
 *{
   margin: 0;
   padding: 0;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -36,12 +38,12 @@ body{
 }
 
 /* Home section  */
-.header-section {
+.home-section {
   background: #111111;
   height:100vh;
 }
 
-.header-section h5{
+.home-section h5{
   font-family: 'Work Sans', sans-serif;
   color: #ffffff;
   letter-spacing: 1.3px;
@@ -49,7 +51,7 @@ body{
   
 }
 
-.header-section h1 {
+.home-section h1 {
   font-family: 'Noto Sans Mono', monospace;
   font-weight: 600;
   font-size: 2em;
@@ -58,13 +60,13 @@ body{
   padding: 0.5em 0 0 0;
 }
 
-.header-section span {
+.home-section span {
   color: #ffb534;
   font-size: 1em;
   letter-spacing: 1.5px;
 }
 
-.header-section p {
+.home-section p {
   font-family: 'Nunito-Bold';
   font-size: 1.3em;
   color: #ffffff;
@@ -74,8 +76,21 @@ body{
 
 
 
+/* About section  */
 
-
+.about-section{
+	background: #ffffff;
+  font-family: 'Noto Sans Mono', monospace;
+  height: 100vh;
+  padding-bottom: 5vw;
+	text-align: center;
+}
+.about-section h3{
+  	font-size: 2.5em;
+  	text-transform: capitalize;
+  	color: #393b3a;
+  	padding-bottom: 2%;
+}
 
 span.glyphicon.glyphicon-triangle-bottom {
   font-size: 2em;
@@ -85,20 +100,7 @@ span.glyphicon.glyphicon-triangle-bottom {
   border-radius: 5px 5px 0 0;
   margin-top: 2.5em;
 }
-.about{
-	background-size: cover;
-	background: #deecdf;
-/* 	background-image: url('../img/1.jpg');
- */	padding-bottom: 5vw;
-	text-align: center;
-}
-.about h3{
-	font-family: 'Nunito-Bold';
-  	font-size: 2.5em;
-  	text-transform: capitalize;
-  	color: #393b3a;
-  	padding-bottom: 2%;
-}
+
 .yourPic{
 	    padding-left: 0%;
 	    transition:  all 0.5s;
