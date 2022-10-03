@@ -5,6 +5,12 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Work Sans', sans-serif; */
 
+:root{
+  --black: #111111; 
+  --gold: #ffb534;
+  --lite_green: #9cd164;
+}
+
 /* Reset default css Properties */
 *{
   margin: 0;
@@ -21,15 +27,15 @@ body{
 }
 
 /* Navbar Header  */
-.mainHeader{
-	  position: fixed; 
-    top: -60px; 
-    transition: all 0.5s;
-    width: 100vw;
-    z-index: 1;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+.mainHeader {
+  position: fixed;
+  top: -60px;
+  transition: all 0.5s;
+  width: 100vw;
+  z-index: 1;
+  padding-left: 0px;
+  padding-right: 0px;
+}
   
   .mainHeader a{
   font-family: 'Noto Sans Mono', monospace;
@@ -39,7 +45,7 @@ body{
 
 /* Home section  */
 .home-section {
-  background: #111111;
+  background: var(--black);
   height:100vh;
 }
 
@@ -61,7 +67,7 @@ body{
 }
 
 .home-section span {
-  color: #ffb534;
+  color: var(--gold);
   font-size: 1em;
   letter-spacing: 1.5px;
 }
@@ -79,18 +85,39 @@ body{
 /* About section  */
 
 .about-section{
-	background: #ffffff;
+	background: var(--lite_green);
   font-family: 'Noto Sans Mono', monospace;
   height: 100vh;
   padding-bottom: 5vw;
 	text-align: center;
 }
-.about-section h3{
-  	font-size: 2.5em;
-  	text-transform: capitalize;
-  	color: #393b3a;
-  	padding-bottom: 2%;
+
+.about-section h3 {
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #393b3a;
+  padding-bottom: 2%;
 }
+
+.about-section img {
+  height: 20vh;
+  width: auto;
+}
+
+.about-section p{
+  font-size: 1rem;
+}
+
+@media only screen and (min-width:850px) {
+  .about-section img{
+    height: 43vh;
+  }
+  .about-section p{
+    font-size: 1.2rem;
+  }
+}
+
+
 
 span.glyphicon.glyphicon-triangle-bottom {
   font-size: 2em;
