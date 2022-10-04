@@ -92,11 +92,11 @@ body{
 	text-align: center;
 }
 
-.about-section h3 {
+.about-section h3, .skill-section h3, .project-section h3{
   font-size: 2.5em;
-  text-transform: capitalize;
   color: #393b3a;
   padding-bottom: 2%;
+  padding-top: 15vh;
 }
 
 .about-section img {
@@ -117,7 +117,36 @@ body{
   }
 }
 
+  /* Skill section */
+  .skill-section{
+    height: 100vh;
+    
+  }
 
+
+
+  .skill-section .education-section p{
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 10vh;
+  }
+
+  .skill-section .education-section label{
+    font-weight: 400;
+  }
+
+  .skill-section .skills{
+    font-size: larger;
+    font-weight: 700;
+  }
+
+
+
+  .project-section{
+    height: 100vh;
+    width: auto;
+    background-color: #00cfbd;
+  }
 
 span.glyphicon.glyphicon-triangle-bottom {
   font-size: 2em;
@@ -128,11 +157,7 @@ span.glyphicon.glyphicon-triangle-bottom {
   margin-top: 2.5em;
 }
 
-.yourPic{
-	    padding-left: 0%;
-	    transition:  all 0.5s;
-      height: 35vh;
-}
+
 @media only screen and (min-width:200px) and (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 	.yourPic{
 	    padding-left: 0%;
@@ -161,8 +186,7 @@ span.glyphicon.glyphicon-triangle-bottom {
 @media only screen and (max-width:1281px) { /* hi-res laptops and desktops */ 
 }
 
-.skills{
-}
+
 .experience{
 	background-color: rgba(255,244,1,0.4);	height: 100vh;
 	text-align: center;	
@@ -274,9 +298,7 @@ h1{
   -webkit-transform: scale3d(1.2, 1.2, 1);
           transform: scale3d(1.2, 1.2, 1);
 }
-#about{
-	padding-top: 10vh;
-}
+
 .carousel-content {
     color:black;
     display:flex;
