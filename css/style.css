@@ -43,6 +43,7 @@ body{
   font-family: 'Noto Sans Mono', monospace;
   letter-spacing: 1.4px;
   margin: 0px 5px;
+  font-size: 1em;
 }
 
 /* Home section  */
@@ -91,8 +92,9 @@ body{
 	background: var(--lite_green);
   font-family: 'Noto Sans Mono', monospace;
   height: 100vh;
-  padding-bottom: 5vw;
 	text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .about-section h3, .skill-section h3, .project-section h3{
@@ -101,7 +103,7 @@ body{
 }
 
 .about-section img {
-  height: 20vh;
+  height:13em;
   width: auto;
 }
 
@@ -111,7 +113,7 @@ body{
 
 @media only screen and (min-width:850px) {
   .about-section img{
-    height: 43vh;
+    height: 20em;
   }
   .about-section p{
     font-size: 1.2rem;
@@ -121,15 +123,16 @@ body{
   /* Skill section */
   .skill-section{
     height: 100vh;
-    
+    display: flex;
+    align-items: center;
   }
-
-
 
 
   .project-section{
     height: 100vh;
     width: auto;
+    display: flex;
+    align-items: center;
     background-color: #00cfbd;
   }
 
