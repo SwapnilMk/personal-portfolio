@@ -9,12 +9,14 @@ font-family: 'Work Sans', sans-serif; */
   --black: #111111; 
   --gold: #ffb534;
   --lite_green: #9cd164;
+  --white: #ffffff;
 }
 
 /* Reset default css Properties */
 *{
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 
@@ -23,7 +25,7 @@ html {
 }
 
 body{
-	transition: all 0.8s;
+	transition: all 0.5s;
 }
 
 /* Navbar Header  */
@@ -37,7 +39,7 @@ body{
   padding-right: 0px;
 }
   
-  .mainHeader a{
+.mainHeader a{
   font-family: 'Noto Sans Mono', monospace;
   letter-spacing: 1.4px;
   margin: 0px 5px;
@@ -46,44 +48,45 @@ body{
 /* Home section  */
 .home-section {
   background: var(--black);
-  height:100vh;
+  height: 100vh;
 }
 
-.home-section h5{
+.home-section h5 {
   font-family: 'Work Sans', sans-serif;
-  color: #ffffff;
+  color: var(--white);
   letter-spacing: 1.3px;
-  font-size: 1.5rem;
-  
+  font-size: 1.2em;
 }
 
 .home-section h1 {
   font-family: 'Noto Sans Mono', monospace;
+  font-size: 1.5em;
   font-weight: 600;
-  font-size: 2em;
   text-transform: capitalize;
-  color: #ffffff;
-  padding: 0.5em 0 0 0;
+  color: var(--white);
+  margin: 5px 0px;
 }
 
 .home-section span {
   color: var(--gold);
-  font-size: 1em;
   letter-spacing: 1.5px;
 }
 
-.home-section p {
+.home-section p{
   font-family: 'Nunito-Bold';
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #ffffff;
   word-spacing: 2px;
   letter-spacing: 2px;
+  margin: 5px 0px;
+}
+
+.home-section a{
+  font-size: 0.9em;
 }
 
 
-
 /* About section  */
-
 .about-section{
 	background: var(--lite_green);
   font-family: 'Noto Sans Mono', monospace;
