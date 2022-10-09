@@ -93,10 +93,8 @@ body{
 }
 
 .about-section h3, .skill-section h3, .project-section h3{
-  font-size: 2.5em;
+  font-size: 2em;
   color: #393b3a;
-  padding-bottom: 2%;
-  padding-top: 15vh;
 }
 
 .about-section img {
@@ -123,22 +121,6 @@ body{
     
   }
 
-
-
-  .skill-section .education-section p{
-    font-size: larger;
-    font-weight: 700;
-    margin-bottom: 10vh;
-  }
-
-  .skill-section .education-section label{
-    font-weight: 400;
-  }
-
-  .skill-section .skills{
-    font-size: larger;
-    font-weight: 700;
-  }
 
 
 
