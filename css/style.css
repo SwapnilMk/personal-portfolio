@@ -6,10 +6,18 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Work Sans', sans-serif; */
 
 :root{
-  --black: #111111; 
+  --black: #1a1a1d;
+  --grey: #4e4e50; 
   --gold: #ffb534;
+  --yellow: #FFD460;
+  --blue: #00ADB5;
+  --orange: #F07B3F;
+  --red: #c3073f;
   --lite_green: #9cd164;
   --white: #ffffff;
+  --primary: #05386b;
+  --secondary: #5cdb95;
+  --sec: #395B64;
 }
 
 /* Reset default css Properties */
@@ -76,7 +84,7 @@ body{
 .home-section p{
   font-family: 'Nunito-Bold';
   font-size: 1.1em;
-  color: #ffffff;
+  color: var(--white);
   word-spacing: 2px;
   letter-spacing: 2px;
   margin: 5px 0px;
@@ -89,7 +97,7 @@ body{
 
 /* About section  */
 .about-section{
-	background: var(--lite_green);
+	background: var(--yellow);
   font-family: 'Noto Sans Mono', monospace;
   height: 100vh;
 	text-align: center;
@@ -97,10 +105,6 @@ body{
   align-items: center;
 }
 
-.about-section h3, .skill-section h3, .project-section h3{
-  font-size: 2em;
-  color: #393b3a;
-}
 
 .about-section img {
   height:13em;
@@ -108,7 +112,13 @@ body{
 }
 
 .about-section p{
-  font-size: 0.9rem;
+  font-size: 1rem;
+  letter-spacing: 2%;
+}
+.about-section p span{
+  font-size: large;
+  font-weight: 500;
+  color: var(--primary);
 }
 
 @media only screen and (min-width:850px) {
@@ -116,63 +126,56 @@ body{
     height: 20em;
   }
   .about-section p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
-  /* Skill section */
-  .skill-section{
-    height: 100vh;
-    display: flex;
-    align-items: center;
+
+/* education section  */
+.education-section{
+  background: var(--secondary);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.education-section .row .card{
+  height: 12rem;
+  background-color: var(--black);
+}
+
+.education-section .card .card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+}
+
+
+@media only screen and (min-width:850px) {
+  .education-section .row .card{
+    height: 25rem;
   }
-
-
-  .project-section{
-    height: 100vh;
-    width: auto;
-    display: flex;
-    align-items: center;
-    background-color: #00cfbd;
-  }
-
-span.glyphicon.glyphicon-triangle-bottom {
-  font-size: 2em;
-  color: #fff;
-  background-color: rgb(0, 207, 189);
-  padding: 0.5em 2em;
-  border-radius: 5px 5px 0 0;
-  margin-top: 2.5em;
 }
 
 
-@media only screen and (min-width:200px) and (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
-	.yourPic{
-	    padding-left: 0%;
-	}
+/* Skill section  */
+.skill-section{
+  background: var(--lite_green);
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
-@media only screen and (min-width:321px) and (max-width:400px)  { /* smartphones, Android phones, landscape iPhone */
-	.yourPic{
-	    padding-left: 10%;
-	}
+
+
+/* project section */
+.project-section{
+  background: var(--yellow);
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
-@media only screen and (min-width:401px) and (max-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-	.yourPic{
-	    padding-left: 25%;
-	}
-	
-}
-@media only screen and (min-width:601px) and (max-width:767px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-	.yourPic{
-	    padding-left: 30%;
-	}
-}
-@media only screen and (max-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-@media only screen and (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
-}
-@media only screen and (max-width:1281px) { /* hi-res laptops and desktops */ 
-}
+
 
 
 .experience{
