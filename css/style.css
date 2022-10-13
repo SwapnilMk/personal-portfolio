@@ -22,19 +22,19 @@ font-family: 'Work Sans', sans-serif; */
 
 /* Reset default css Properties */
 *{
+  box-sizing: border-box;
+}
+
+body, html {
+
   margin: 0;
+  width: 100%;
+  height: 100%;
   padding: 0;
-  border: 0;
-}
-
-
-html {
   scroll-behavior: smooth;
+  transition: all 0.5s;
 }
 
-body{
-	transition: all 0.5s;
-}
 
 /* Navbar Header  */
 .mainHeader {
@@ -95,6 +95,8 @@ body{
 }
 
 
+
+
 /* About section  */
 .about-section{
 	background: var(--yellow);
@@ -113,7 +115,8 @@ body{
 
 .about-section p{
   font-size: 1rem;
-  letter-spacing: 2%;
+  letter-spacing: 1%;
+  line-height: 2em;
 }
 .about-section p span{
   font-size: large;
@@ -129,6 +132,8 @@ body{
     font-size: 1.1rem;
   }
 }
+
+
 
 
 /* education section  */
@@ -159,6 +164,21 @@ body{
 }
 
 
+
+.card:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
 /* Skill section  */
 .skill-section{
   background: var(--lite_green);
@@ -184,9 +204,10 @@ body{
 }
 .experience h3{
 	font-family: 'Nunito-Bold';
-  	font-size: 2.5em;
-  	text-transform: capitalize;
-  	color: #393b3a;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #393b3a;
+  
 }
 .projects{
 	background-color: rgba(25,244,1,0.4);
@@ -196,10 +217,10 @@ body{
 }
 .projects h3{
 	font-family: 'Nunito-Bold';
-  	font-size: 2.5em;
-  	text-transform: capitalize;
-  	color: #393b3a;
-  	margin-bottom: 2%;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #393b3a;
+  margin-bottom: 2%;
 }
 .hero{
   width: 100%;
@@ -450,9 +471,7 @@ font-size: 2em;
   border: 2px solid;
   padding: 1em;
 }
-.contactMe{
 
-}
 .contact-section {
   padding: 4em 0;
   background: #deecdf;
