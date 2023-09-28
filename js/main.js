@@ -6,7 +6,7 @@ function scrollFunction() {
     //document.getElementById("navbar").classList.remove('dark');
     document.getElementById("myBtn").style.display = "block";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("navbar").style.top = "-55px";
     document.getElementById("myBtn").style.display = "none";
   }
 }
